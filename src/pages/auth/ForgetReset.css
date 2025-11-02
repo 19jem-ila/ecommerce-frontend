@@ -1,0 +1,123 @@
+/* src/pages/AuthPages.css */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 480px;
+  }
+  
+  .auth-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 8px !important;
+  }
+  
+  .auth-subtitle {
+    display: block;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .auth-form {
+    margin-bottom: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-input {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s;
+  }
+  
+  .form-input:hover {
+    border-color: #53E458;
+  }
+  
+  .form-input:focus {
+    border-color: #53E458;
+    box-shadow: 0 0 0 2px rgba(83, 228, 88, 0.2);
+    outline: none;
+  }
+  
+  .error-message {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .server-error {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  
+  .success-message {
+    color: #52c41a;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    padding: 8px 12px;
+    background-color: #f6ffed;
+    border: 1px solid #b7eb8f;
+    border-radius: 6px;
+  }
+  
+  .auth-button {
+    height: 44px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .auth-redirect {
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+  }
+  
+  .auth-link {
+    color: #53E458;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .auth-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .auth-card {
+      padding: 24px;
+      box-shadow: none;
+    }
+    
+    .auth-container {
+      background-color: white;
+      padding: 0;
+    }
+  }

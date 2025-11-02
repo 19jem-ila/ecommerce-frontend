@@ -1,0 +1,173 @@
+/* src/pages/SignupPage.css */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .signup-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 480px;
+  }
+  
+  .signup-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 8px !important;
+  }
+  
+  .signup-subtitle {
+    display: block;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .signup-form {
+    margin-bottom: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-input {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s;
+  }
+  
+  .form-input:hover {
+    border-color: #53E458;
+  }
+  
+  .form-input:focus {
+    border-color: #53E458;
+    box-shadow: 0 0 0 2px rgba(83, 228, 88, 0.2);
+    outline: none;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center; /* Changed from flex-start to center */
+    margin-bottom: 20px;
+  }
+  
+  /* Custom checkbox styling */
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .custom-checkbox .ant-checkbox {
+    top: 0;
+  }
+  
+  .custom-checkbox .ant-checkbox-inner {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+  }
+  
+  .custom-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #53E458;
+    border-color: #53E458;
+  }
+  
+  .custom-checkbox .ant-checkbox-checked .ant-checkbox-inner::after {
+    border-color: white;
+    border-width: 2px;
+    width: 6px;
+    height: 10px;
+    left: 6px;
+    top: 2px;
+  }
+  
+  .custom-checkbox .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+  .custom-checkbox .ant-checkbox:hover .ant-checkbox-inner,
+  .custom-checkbox .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: #53E458;
+  }
+  
+  .custom-checkbox .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked::after {
+    border-color: #53E458;
+  }
+  
+  .terms-link {
+    color: #53E458;
+    text-decoration: none;
+  }
+  
+  .terms-link:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .server-error {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  
+  .login-redirect {
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+  }
+  
+  .login-link {
+    color: #53E458;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
+  .divider {
+    color: #999;
+    font-size: 12px;
+  }
+  
+  .google-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .signup-card {
+      padding: 24px;
+      box-shadow: none;
+    }
+    
+    .signup-container {
+      background-color: white;
+      padding: 0;
+    }
+  }

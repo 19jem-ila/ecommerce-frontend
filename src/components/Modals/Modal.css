@@ -1,0 +1,272 @@
+/* Prescription Modal Styles */
+.prescription-modal .ant-modal-content {
+    border-radius: 12px;
+  }
+  
+  .prescription-modal .ant-modal-header {
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid #f0f0f0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  
+  .prescription-modal-content {
+    padding: 10px 0;
+  }
+  
+  .prescription-upload {
+    border: 2px dashed #d9d9d9;
+    border-radius: 8px;
+    background: #fafafa;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .prescription-upload:hover {
+    border-color: #1890ff;
+    background: #f0f8ff;
+  }
+  
+  .uploaded-files {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #52c41a;
+  }
+  
+  .uploaded-files h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #e8e8e8;
+  }
+  
+  .file-name {
+    flex: 1;
+    font-weight: 500;
+    color: #2c3e50;
+  }
+  
+  .file-size {
+    color: #6c757d;
+    font-size: 12px;
+    margin: 0 12px;
+  }
+  
+  .remove-file {
+    color: #ff4d4f;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .remove-file:hover {
+    background: #fff2f0;
+    transform: scale(1.1);
+  }
+  
+  .prescription-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e6f7ff;
+    border-radius: 8px;
+    border-left: 4px solid #1890ff;
+  }
+  
+  .prescription-info h4 {
+    margin-bottom: 10px;
+    color: #1890ff;
+  }
+  
+  .prescription-info ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #595959;
+  }
+  
+  .prescription-info li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
+  
+  /* Size Guide Modal Styles */
+  .size-guide-modal .ant-modal-content {
+    border-radius: 12px;
+  }
+  
+  .size-guide-modal .ant-modal-header {
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid #f0f0f0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  
+  .size-guide-content {
+    padding: 10px 0;
+  }
+  
+  .size-tabs .ant-tabs-nav {
+    margin-bottom: 20px;
+  }
+  
+  .size-tabs .ant-tabs-tab {
+    font-weight: 600;
+  }
+  
+  .size-table-section {
+    margin-bottom: 20px;
+  }
+  
+  .size-table-section h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .size-table .ant-table-thead > tr > th {
+    background: #f0f8ff;
+    font-weight: 600;
+    color: #1890ff;
+  }
+  
+  .size-table .ant-table-tbody > tr > td {
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .measurement-guide h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .measurement-image-placeholder {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .measurement-icon {
+    font-size: 48px;
+    color: #1890ff;
+    margin-bottom: 10px;
+  }
+  
+  .measurement-table .ant-table-thead > tr > th {
+    background: #f6ffed;
+    font-weight: 600;
+    color: #52c41a;
+  }
+  
+  .measurement-tips {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff7e6;
+    border-radius: 8px;
+    border-left: 4px solid #fa8c16;
+  }
+  
+  .measurement-tips h5 {
+    color: #fa8c16;
+    margin-bottom: 10px;
+  }
+  
+  .measurement-tips ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #595959;
+  }
+  
+  .measurement-tips li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
+  
+  .size-guide-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+  }
+  
+  .need-help {
+    text-align: center;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 8px;
+  }
+  
+  .need-help h4 {
+    color: #1890ff;
+    margin-bottom: 10px;
+  }
+  
+  .need-help p {
+    color: #595959;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive adjustments for modals */
+  @media (max-width: 768px) {
+    .prescription-modal,
+    .size-guide-modal {
+      width: 90% !important;
+      margin: 20px auto;
+    }
+    
+    .file-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    
+    .file-size {
+      margin: 0;
+    }
+    
+    .size-table .ant-table-thead > tr > th,
+    .size-table .ant-table-tbody > tr > td {
+      padding: 8px 4px;
+      font-size: 12px;
+    }
+    
+    .measurement-image-placeholder {
+      padding: 20px;
+    }
+    
+    .measurement-icon {
+      font-size: 32px;
+    }
+  }
+  
+  /* Animation for modal content */
+  .prescription-modal-content,
+  .size-guide-content {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,123 @@
+.loading-spinner, .no-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+    min-height: 400px;
+  }
+  
+  .no-products {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .no-products .ant-typography {
+    margin-bottom: 0.5rem;
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+  }
+  
+  .pagination-container .ant-pagination {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Optional: Add smooth transition for grid resizing */
+  .row-with-sidebar {
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive adjustments for different screen sizes */
+  @media (max-width: 576px) {
+    /* xs: 1 column always */
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    /* sm: 2 columns always */
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    /* md: 2 columns with sidebar, 3 columns without */
+    .sidebar-visible .ant-col-md-12 {
+      width: 50%; /* 2 columns */
+    }
+    .sidebar-hidden .ant-col-md-8 {
+      width: 33.33333333%; /* 3 columns */
+    }
+  }
+  
+  @media (min-width: 993px) and (max-width: 1200px) {
+    /* lg: 3 columns with sidebar, 4 columns without */
+    .sidebar-visible .ant-col-lg-8 {
+      width: 33.33333333%; /* 3 columns */
+    }
+    .sidebar-hidden .ant-col-lg-6 {
+      width: 25%; /* 4 columns */
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    /* xl: 3 columns with sidebar, 4 columns without */
+    .sidebar-visible .ant-col-xl-8 {
+      width: 33.33333333%; /* 3 columns */
+    }
+    .sidebar-hidden .ant-col-xl-6 {
+      width: 25%; /* 4 columns */
+    }
+  }
+
+  .glasses-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .glasses-frame {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  .lens {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #53E458;
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  .left-lens {
+    animation-delay: 0s;
+  }
+  
+  .right-lens {
+    animation-delay: 0.5s;
+  }
+  
+  .bridge {
+    width: 20px;
+    height: 3px;
+    background: #53E458;
+    border-radius: 2px;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
