@@ -151,7 +151,7 @@ const SearchResults = () => {
                   <Text type="secondary">
                     Try adjusting your search terms or browse our categories
                   </Text>
-                  <Button type="primary" onClick={() => window.location.href = '/home'}>
+                  <Button type="primary" onClick={() => window.location.href = '/'}>
                     Browse All Products
                   </Button>
                 </Space>
