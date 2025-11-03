@@ -39,7 +39,7 @@ const App = () => {
       <Route path="/order-confirmation" element={<OrderConfirmationPage />} />
       <Route path="/orders" element={<OrderHistoryPage />} />
       <Route path="/favourite" element={<WishlistPage />} />
-    
+      <Route path="/cart" element={<CartPage />} />
       <Route path="products/category/lenses" element={<LensesPage/>} />
       <Route path="/profile" element={<ProfilePage/>} />
       <Route path="/search" element={<SearchResults />} />
@@ -54,7 +54,7 @@ const App = () => {
 
       {/* Protected routes */}
       <Route element={<ProtectedRoute />}>
-      <Route path="/cart" element={<CartPage />} />
+      
         
       </Route>
 

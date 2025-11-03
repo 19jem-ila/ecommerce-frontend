@@ -147,10 +147,10 @@ const HomeBanner = () => {
       {/* Banner Footer */}
       <div className="banner-footer">
         <div className="footer-item">
-          <div className="footer-icon">
+          <div className="footer-icon" id ="banner-ship">
             <FontAwesomeIcon icon={faTruck} />
           </div>
-          <p>Free shipping</p>
+          <p >Free shipping</p>
         </div>
         <div className="footer-item">
           <div className="footer-icon">
